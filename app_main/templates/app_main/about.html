@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <h4 class="center">Пару слов о себе</h4>
+    <img class="cat" src="{% static 'image/app_main/this_is_i.jpeg' %}" alt="photo">
+{% endblock %}
