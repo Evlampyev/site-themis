@@ -1,0 +1,44 @@
+[INFO    :            app_main.views] - 2024-04-26 21:31:16,984 : home @ 0013: Главная страница
+[INFO    :             django.server] - 2024-04-26 21:31:17,043 : log_message @ 0212: "GET / HTTP/1.1" 200 12227
+[INFO    :             django.server] - 2024-04-26 21:31:17,084 : log_message @ 0212: "GET /static/css/stylesheet.css HTTP/1.1" 200 9897
+[INFO    :             django.server] - 2024-04-26 21:31:17,087 : log_message @ 0212: "GET /static/image/app_main/cat_1.jpg HTTP/1.1" 200 145712
+[INFO    :             django.server] - 2024-04-26 21:31:17,089 : log_message @ 0212: "GET /static/image/app_main/cat_2.jpg HTTP/1.1" 200 313796
+[INFO    :             django.server] - 2024-04-26 21:31:17,092 : log_message @ 0212: "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+[INFO    :             django.server] - 2024-04-26 21:31:17,100 : log_message @ 0212: "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+[INFO    :             django.server] - 2024-04-26 21:31:17,117 : log_message @ 0212: "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+[INFO    :             django.server] - 2024-04-26 21:31:17,123 : log_message @ 0212: "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+[INFO    :             django.server] - 2024-04-26 21:31:17,125 : log_message @ 0212: "GET /static/image/femidalittle.png HTTP/1.1" 200 788066
+[INFO    :             django.server] - 2024-04-26 21:31:17,177 : log_message @ 0212: "GET /static/image/favicon.ico HTTP/1.1" 200 251966
+[INFO    :             django.server] - 2024-04-26 21:31:30,346 : log_message @ 0212: "GET /competitions/competition_result/ HTTP/1.1" 200 12522
+[INFO    :             django.server] - 2024-04-26 21:31:32,657 : log_message @ 0212: "GET /competitions/all/ HTTP/1.1" 200 12274
+[INFO    :             django.server] - 2024-04-26 21:31:33,816 : log_message @ 0212: "GET /judges/all/ HTTP/1.1" 302 0
+[INFO    :            app_main.views] - 2024-04-26 21:31:33,828 : home @ 0013: Главная страница
+[INFO    :             django.server] - 2024-04-26 21:31:33,837 : log_message @ 0212: "GET /?next=/judges/all/ HTTP/1.1" 200 12244
+[INFO    :             django.server] - 2024-04-26 21:31:37,208 : log_message @ 0212: "GET /judges/participants_list/all HTTP/1.1" 200 14984
+[INFO    :             django.server] - 2024-04-26 21:31:41,104 : log_message @ 0212: "GET /judges/participants_list/active HTTP/1.1" 200 13535
+[INFO    :            app_main.views] - 2024-04-26 21:31:42,577 : contacts @ 0029: Загружена страница контактов
+[INFO    :             django.server] - 2024-04-26 21:31:42,589 : log_message @ 0212: "GET /contacts/ HTTP/1.1" 200 11828
+[INFO    :            app_main.views] - 2024-04-26 21:31:44,237 : about @ 0023: Загружена страница обо мне
+[INFO    :             django.server] - 2024-04-26 21:31:44,249 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 11595
+[INFO    :             django.server] - 2024-04-26 21:31:44,285 : log_message @ 0212: "GET /static/image/app_main/this_is_i.jpeg HTTP/1.1" 200 193152
+[INFO    :             django.server] - 2024-04-26 21:31:47,608 : log_message @ 0212: "GET /competitions/competition_result/ HTTP/1.1" 200 12521
+[INFO    :            app_main.views] - 2024-04-26 21:31:48,214 : home @ 0013: Главная страница
+[INFO    :             django.server] - 2024-04-26 21:31:48,224 : log_message @ 0212: "GET / HTTP/1.1" 200 12226
+[INFO    :             django.server] - 2024-04-26 21:53:02,319 : log_message @ 0212: "GET /judges/participants_list/all HTTP/1.1" 200 14984
+[INFO    :             django.server] - 2024-04-26 21:53:03,186 : log_message @ 0212: "GET /judges/all/ HTTP/1.1" 302 0
+[INFO    :            app_main.views] - 2024-04-26 21:53:03,195 : home @ 0013: Главная страница
+[INFO    :             django.server] - 2024-04-26 21:53:03,204 : log_message @ 0212: "GET /?next=/judges/all/ HTTP/1.1" 200 12244
+[INFO    :             django.server] - 2024-04-26 21:53:03,735 : log_message @ 0212: "GET /competitions/all/ HTTP/1.1" 200 12273
+[INFO    :             django.server] - 2024-04-26 21:53:25,766 : log_message @ 0212: "GET /judges/all/ HTTP/1.1" 302 0
+[INFO    :            app_main.views] - 2024-04-26 21:53:25,774 : home @ 0013: Главная страница
+[INFO    :             django.server] - 2024-04-26 21:53:25,783 : log_message @ 0212: "GET /?next=/judges/all/ HTTP/1.1" 200 12244
+[INFO    :             django.server] - 2024-04-26 21:53:27,439 : log_message @ 0212: "GET /judges/participants_list/all HTTP/1.1" 200 14984
+[INFO    :             django.server] - 2024-04-26 21:53:31,387 : log_message @ 0212: "GET /judges/participants_list/all HTTP/1.1" 200 14984
+[INFO    :             django.server] - 2024-04-26 21:53:33,297 : log_message @ 0212: "GET /judges/participants_list/all HTTP/1.1" 200 14984
+[INFO    :             django.server] - 2024-04-26 21:53:34,482 : log_message @ 0212: "GET /judges/participants_list/active HTTP/1.1" 200 13535
+[INFO    :            app_main.views] - 2024-04-26 21:53:36,822 : about @ 0023: Загружена страница обо мне
+[INFO    :             django.server] - 2024-04-26 21:53:36,830 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 11594
+[INFO    :            app_main.views] - 2024-04-26 21:53:37,642 : contacts @ 0029: Загружена страница контактов
+[INFO    :             django.server] - 2024-04-26 21:53:37,652 : log_message @ 0212: "GET /contacts/ HTTP/1.1" 200 11827
+[INFO    :             django.server] - 2024-04-26 21:53:40,001 : log_message @ 0212: "GET /competitions/all/ HTTP/1.1" 200 12273
+[INFO    :             django.server] - 2024-04-26 21:53:41,787 : log_message @ 0212: "GET /competitions/competition_result/ HTTP/1.1" 200 12521
