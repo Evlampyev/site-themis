@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    {% if not users %}
+    <h4 class="center">Список судей пока пуст</h4>
+    {% else %}
+    <div class="table-caption">{{ title }}</div>
+    <table id="table">
+        <thead>
+        <tr>
+            {% for value in table_title %}
+            {% if value != 'Редактор' %}
+            <th>{{ value }}</th>
+            {% else %}
+            {% if user.judge.status == 'M' or user.judge.status == 'J' %}
+            <th>{{ value }}</th>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+
+            <!--            <th><input type="checkbox"/></th>-->
+        </tr>
+        </thead>
+        <tbody>
+        {% for j_user in users %}
+        <tr>
+
+            <td>{{ forloop.counter }}</td>
+            <td>{{ j_user.first_name }}</td>
+            <td>{{ j_user.judge.patronymic }}</td>
+            <td>{{ j_user.last_name }}</td>
+            <td>{{ j_user.judge.post }}</td>
+            <td>{{ j_user.judge.regalia }}</td>
+            <td>{{ j_user.judge.organization }}</td>
+            <td>{{ j_user.judge.get_status_display }}</td>
+            <!--            для отображения верной должности-->
+            <td>
+                {% for key,item in competitions.items %}
+                {% if key == j_user.id %}
+                {% for it in item %}
+                {{it}}<br>
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
+            </td>
+            {% if user.judge.status == 'M' or user.judge.status == 'J' %}
+            <td class="actions"><a href="{% url 'edit_judge' pk=j_user.id %}">Изменить</a>
+                <br>
+                <a href="{% url 'delete_judge' pk=j_user.id %}">Удалить</a></td>
+            {% endif %}
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+
+    <div class="container">
+        {% if user.judge.status == 'M' or user.judge.status == 'J' %}
+        <a href="{% url 'add_judge' %}" class="btn a_btn">Добавить</a>
+        {% endif %}
+    </div>
+
+</div>
+{% endblock %}
